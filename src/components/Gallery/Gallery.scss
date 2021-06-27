@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5rem;
+    flex-wrap: wrap;
   }
 
   &-heading {
@@ -20,5 +21,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+
+    @include responsive(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(sm) {
+      grid-template-columns: 1fr;
+    }
   }
 }

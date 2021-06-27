@@ -12,7 +12,20 @@
     border: 0.1rem solid color(white);
     padding: 3rem;
     line-height: 1;
-    width: 45%;
+    width: 50%;
     text-transform: uppercase;
+
+    @include responsive(lg) {
+      width: 75%;
+    }
+
+    @include responsive(md) {
+      width: 100%;
+      font-size: size(xxl) + 2rem;
+    }
+
+    @include responsive(sm) {
+      font-size: size(xxl);
+    }
   }
 }

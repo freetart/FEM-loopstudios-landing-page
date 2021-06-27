@@ -5,6 +5,10 @@
   align-items: center;
   gap: 4rem;
 
+  @include responsive(md) {
+    flex-direction: column;
+  }
+
   .nav-link {
     @include headingStyles;
     font-size: size(xs);

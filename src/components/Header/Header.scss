@@ -1,1 +1,7 @@
 @use '../../baseScss/abstracts' as *;
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    url('../../images/desktop/image-hero.jpg') top center/cover no-repeat;
+  min-height: 80vh;
+}

@@ -1,0 +1,28 @@
+@use '../../baseScss/abstracts' as *;
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    .gallery-card-img {
+      transform: scale(1.2);
+    }
+  }
+
+  &-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+    transition: $mainTransition;
+  }
+
+  &-text {
+    @include headingStyles;
+    font-size: size(xxl);
+    color: color(white);
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 2;
+  }
+}

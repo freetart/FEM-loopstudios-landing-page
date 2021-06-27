@@ -1,0 +1,24 @@
+@use '../../baseScss/abstracts' as *;
+
+.gallery {
+  @include maxWidthLg;
+  @include sectionSpacingSm;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  &-heading {
+    @include textStyles;
+    font-size: size(xxl) + 2rem;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}

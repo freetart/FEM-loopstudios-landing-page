@@ -1,0 +1,17 @@
+@use '../../baseScss/abstracts' as *;
+
+.btn {
+  @include headingStyles;
+  font-size: size(md);
+  color: color(black);
+  letter-spacing: 0.5rem;
+  border: 0.1rem solid color(black);
+  padding: 1rem 2.5rem;
+  transition: $mainTransition;
+
+  &:hover,
+  &:focus {
+    background-color: color(black);
+    color: color(white);
+  }
+}

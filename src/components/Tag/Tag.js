@@ -3,13 +3,13 @@ import logo from '../../images/logo/habibdevgif.gif';
 
 const Tag = () => {
   return (
-    <article class='tag'>
-      <h3 class='tag-heading'>
+    <article className='tag'>
+      <h3 className='tag-heading'>
         /* project for{' '}
         <a
           href='https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw'
           target='_blank'
-          class='tag-link'
+          className='tag-link'
         >
           frontend mentor
         </a>{' '}
@@ -17,13 +17,13 @@ const Tag = () => {
         <a
           href='https://github.com/habibdev96'
           target='_blank'
-          class='tag-link'
+          className='tag-link'
         >
           habibdev{' '}
         </a>
         */
       </h3>
-      <img src={logo} alt='logo' class='tag-logo' />
+      <img src={logo} alt='logo' className='tag-logo' />
     </article>
   );
 };

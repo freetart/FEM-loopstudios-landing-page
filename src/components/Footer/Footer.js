@@ -10,11 +10,11 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer-content'>
         <div>
-          <img src={logo} alt='loopstudios logo' class='footer-logo' />
+          <img src={logo} alt='loopstudios logo' className='footer-logo' />
           <NavLinks />
         </div>
         <div>
-          <div class='footer-socials'>
+          <div className='footer-socials'>
             <a href='#!'>
               <GrFacebook className='footer-icon' size={25} />
             </a>
@@ -28,7 +28,7 @@ const Footer = () => {
               <AiOutlineInstagram className='footer-icon' size={30} />
             </a>
           </div>
-          <p class='footer-copyright'>
+          <p className='footer-copyright'>
             © 2021 Loopstudios. All rights reserved.
           </p>
         </div>

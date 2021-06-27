@@ -1,0 +1,42 @@
+@use '../../baseScss/abstracts' as *;
+
+.footer {
+  background-color: color(black);
+  color: color(white);
+
+  &-content {
+    @include maxWidthLg;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &-icon {
+    color: color(white);
+    transition: $mainTransition;
+
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+    }
+  }
+
+  &-copyright {
+    @include textStyles;
+    font-size: size(xxs);
+  }
+}

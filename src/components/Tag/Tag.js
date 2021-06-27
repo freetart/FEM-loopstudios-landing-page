@@ -9,6 +9,7 @@ const Tag = () => {
         <a
           href='https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw'
           target='_blank'
+          rel='noreferrer'
           className='tag-link'
         >
           frontend mentor
@@ -17,6 +18,7 @@ const Tag = () => {
         <a
           href='https://github.com/habibdev96'
           target='_blank'
+          rel='noreferrer'
           className='tag-link'
         >
           habibdev{' '}

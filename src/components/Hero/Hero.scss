@@ -2,7 +2,7 @@
 
 .hero {
   @include maxWidthLg;
-  @include sectionSpacing;
+  @include sectionSpacingSm;
   margin-top: 10rem;
 
   &-heading {

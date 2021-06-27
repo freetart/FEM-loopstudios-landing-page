@@ -5,8 +5,16 @@
   align-items: center;
 }
 
-@mixin sectionSpacing() {
+@mixin sectionSpacingSm() {
   padding: 5rem 2rem;
+}
+
+@mixin sectionSpacingMd() {
+  padding: 10rem 2rem;
+}
+
+@mixin sectionSpacingLg() {
+  padding: 20rem 2rem;
 }
 
 // typography styles

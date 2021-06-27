@@ -17,7 +17,7 @@ const Gallery = () => {
         <h2 className='gallery-heading'>Our Creations</h2>
         <Button text={'See All'} />
       </header>
-      <div className='gallery-grid'>
+      <div className='gallery-grid' data-aos='fade-up'>
         <GalleryCard img={cardImg1} desc={'Deep Earth'} />
         <GalleryCard img={cardImg2} desc={'Night Arcade'} />
         <GalleryCard img={cardImg3} desc={'Soccer Team VR'} />

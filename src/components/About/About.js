@@ -5,7 +5,12 @@ const About = () => {
   return (
     <section className='about'>
       <div className='about-content'>
-        <img src={img} alt='man with vr headset' className='about-img' />
+        <img
+          src={img}
+          alt='man with vr headset'
+          className='about-img'
+          data-aos='fade-left'
+        />
         <div className='about-info'>
           <h2 className='about-heading'>The leader in interactive VR</h2>
           <p className='about-desc'>

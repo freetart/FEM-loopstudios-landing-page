@@ -1,6 +1,8 @@
 @use '../../baseScss/abstracts' as *;
 
 .about {
+  overflow-x: hidden;
+
   &-content {
     @include sectionSpacingLg;
     @include maxWidthLg;

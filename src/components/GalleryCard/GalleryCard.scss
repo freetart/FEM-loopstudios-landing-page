@@ -28,6 +28,10 @@
     padding: 0.5rem;
     transform: translateX(200%);
     transition: $mainTransition;
+
+    @include responsive(sm) {
+      transform: translateX(0);
+    }
   }
 
   &:hover,

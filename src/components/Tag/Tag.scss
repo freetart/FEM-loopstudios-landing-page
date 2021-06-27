@@ -1,0 +1,30 @@
+@use '../../baseScss/abstracts' as *;
+
+.tag {
+  @include flexCenter;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: color(black);
+
+  &-heading {
+    @include textStyles;
+    font-size: size(sm);
+    color: color(white);
+  }
+
+  &-link {
+    @include headingStyles;
+    color: color(gray-100);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &-logo {
+    width: 5rem;
+  }
+}

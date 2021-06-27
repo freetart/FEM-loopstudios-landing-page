@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 import Tag from './components/Tag/Tag';
 import Preloader from './components/Preloader/Preloader';
 
-// TODO: add aos | add hamburger menu
+// TODO: add hamburger menu
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

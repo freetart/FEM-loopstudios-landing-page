@@ -1,0 +1,12 @@
+@use '../../baseScss/abstracts' as *;
+
+.mobile-menu-toggle {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+
+  .mobile-menu-icon {
+    font-size: size(xxl);
+    color: color(white);
+  }
+}

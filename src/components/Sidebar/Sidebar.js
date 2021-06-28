@@ -13,7 +13,7 @@ const Sidebar = ({ isActive }) => {
       </aside>
     );
   } else {
-    return '';
+    return null;
   }
 };
 

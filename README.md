@@ -12,7 +12,7 @@ this is my first react project so i faced a lot of challenges of trying to work 
 - work with more dynamic data even if it's just local json files
 
 #### Features
-
+- preloader
 - simple dropdown menu
 - responsive design (the browser needs to be refreshed on some components when the window is resized in order for the responsive changes to kick in)
 - animated content

@@ -12,9 +12,60 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Frontend Mentor | Loopstudios Landing Page</title>
+    <style>
+      /* preloader styles */
+      body {
+        margin: 0;
+      }
+
+      .loader-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+        background-color: #000;
+      }
+
+      .loader {
+        margin: auto;
+        border: 5px double #dadada;
+        border-top: 5px double rgb(190, 2, 190);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!-- root -->
+    <div id="root">
+      <!-- preloader -->
+      <div class="loader-container">
+        <div class="loader"></div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,21 @@
+@use '../../baseScss/abstracts' as *;
+
+.sidebar {
+  background-color: color(black);
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+  }
+
+  &-logo {
+    width: 20rem;
+    margin-bottom: 5rem;
+  }
+}

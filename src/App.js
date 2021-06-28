@@ -7,9 +7,11 @@ import Gallery from './components/Gallery/Gallery';
 import Footer from './components/Footer/Footer';
 import Tag from './components/Tag/Tag';
 import Preloader from './components/Preloader/Preloader';
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   AOS.init({ offset: 100, duration: 1000, once: true });
 
@@ -23,7 +25,8 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Sidebar isActive={isActive} />
+      <Header setIsActive={setIsActive} isActive={isActive} />
       <main>
         <About />
         <Gallery />

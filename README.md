@@ -13,6 +13,7 @@ this is my first react project so i faced a lot of challenges of trying to work 
 
 #### Features
 
+- simple dropdown menu
 - responsive design (the browser needs to be refreshed on some components when the window is resized in order for the responsive changes to kick in)
 - animated content
 

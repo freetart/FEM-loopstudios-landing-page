@@ -3,7 +3,7 @@ import logo from '../../images/logo.svg';
 import NavLinks from '../NavLinks/NavLinks';
 import MobileMenuToggle from '../MobileMenuToggle/MobileMenuToggle';
 
-const Navbar = () => {
+const Navbar = ({ isActive, setIsActive }) => {
   return (
     <nav className='nav'>
       <div className='nav-content'>
@@ -11,7 +11,7 @@ const Navbar = () => {
           <img src={logo} alt='loopstudios logo' className='nav-logo' />
         </a>
         {window.innerWidth <= 800 ? (
-          <MobileMenuToggle />
+          <MobileMenuToggle setIsActive={setIsActive} isActive={isActive} />
         ) : (
           <NavLinks className='header-nav' />
         )}
